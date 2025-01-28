@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+   <link rel="shortcut icon" href="./Config/Db/icon.png" type="image/x-icon">
+   <link rel="stylesheet" href="./Config/App.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" class="display" id="display" disabled />
+        <div class="buttons">
+            <button class="button" onclick="appendNumber('7')">7</button>
+            <button class="button" onclick="appendNumber('8')">8</button>
+            <button class="button" onclick="appendNumber('9')">9</button>
+            <button class="button" onclick="appendOperator('/')">/</button>
+            <button class="button" onclick="calculateSquareRoot()">√</button>
+
+            <button class="button" onclick="appendNumber('4')">4</button>
+            <button class="button" onclick="appendNumber('5')">5</button>
+            <button class="button" onclick="appendNumber('6')">6</button>
+            <button class="button" onclick="appendOperator('*')">*</button>
+            <button class="button" onclick="calculatePower()">x²</button>
+
+            <button class="button" onclick="appendNumber('1')">1</button>
+            <button class="button" onclick="appendNumber('2')">2</button>
+            <button class="button" onclick="appendNumber('3')">3</button>
+            <button class="button" onclick="appendOperator('-')">-</button>
+            <button class="button" onclick="calculateFactorial()">n!</button>
+
+            <button class="button" onclick="appendNumber('0')">0</button>
+            <button class="button" onclick="appendOperator('.')">.</button>
+            <button class="button clear" onclick="clearDisplay()">C</button>
+            <button class="button" onclick="appendOperator('+')">+</button>
+            <button class="button" onclick="calculateSin()">sin</button>
+
+            <button class="button" onclick="calculateCos()">cos</button>
+            <button class="button" onclick="calculateTan()">tan</button>
+            <button class="button" onclick="appendOperator('(')">(</button>
+            <button class="button" onclick="appendOperator(')')">)</button>
+            <button class="button equals" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="./Config/App.js"></script>
+</body>
+</html>
